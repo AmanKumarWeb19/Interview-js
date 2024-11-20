@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+  /** How to find factorial(n!) of a given number in javascript?
+ *
+ * The Factorial of a number is the product of all number from 1 to that number.
+ *
+ * for Example:- Factorial of 5 is Equal to 5!=1*2*3*4*5 = 120
+ *
+ * Factorial of negative number is not Possible.
+ *
+ */
+  const inputNum = prompt("Please Enter Your Number");
+
+  function Factorial(inputNum) {
+
+    let fact = 1;
+    if (inputNum < 0) {
+      console.log(`Factorial of ${inputNum} is not Possible`);
+    } else {
+      for (let i = 1; i <= inputNum; i++) {
+        fact = fact * i;
+      }
+    }
+    console.log(`Factorial of ${inputNum} is ${fact}`);
+  }
+
+  Factorial(inputNum);
+
+</script>
