@@ -34,3 +34,23 @@ function ConvertNumberPalindrome(input) {
 
 let numberCheckPalindrome = ConvertNumberPalindrome(1881);
 console.log("NumberCheckPalindrome", numberCheckPalindrome);
+
+// Handling Both Numbers and Strings Palindrome:-
+
+function BothNumberAndStringPalindrome(input) {
+  // Convert to string if input is a number
+  let str = typeof input == "number" ? input.toString() : input;
+
+  // Reverse the string
+  let reversed = str.split("").reverse().join("");
+
+  // Compare the original and reversed strings
+  if (str === reversed) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+let bothNumAndStr = BothNumberAndStringPalindrome(121);
+console.log("both:-", bothNumAndStr);
