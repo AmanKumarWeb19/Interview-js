@@ -158,7 +158,14 @@
 
 // 20
 
-function getAge(...arg) {
-  console.log(typeof arg);
+// function getAge(...arg) {
+//   console.log(typeof arg); // object
+// }
+// getAge(21);
+
+function getAge() {
+  "use strict";
+  age = 20;
+  console.log(age); //ReferenceError: age is not defined because we using "use strict."
 }
-getAge(21);
+getAge();
