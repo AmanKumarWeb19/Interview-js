@@ -40,16 +40,29 @@
 // console.log("2" - 2);
 
 // Question 5:- Difference between Map and ForEach method:-
-const arrNum = [1, 2, 3, 4, 5];
+// const arrNum = [1, 2, 3, 4, 5];
 
-const mapMethod = arrNum.map((num) => {
-  return num + 3;
-});
-console.log(mapMethod);
+// const mapMethod = arrNum.map((num) => {
+//   return num + 3;
+// });
+// console.log(mapMethod);
 
-let box = [];
-const ForEachMethod = arrNum.forEach((res) => {
-  box.push(res + 8);
-});
-console.log(ForEachMethod);
-console.log(box);
+// let box = [];
+// const ForEachMethod = arrNum.forEach((res) => {
+//   box.push(res + 8);
+// });
+// console.log(ForEachMethod);
+// console.log(box);
+
+// Question 6:- hoisting
+
+function fruit() {
+  console.log(name); //Undefined
+  console.log(number); // ReferenceError: Cannot access 'number' before initialization
+
+  var name = "apple";
+  let number = 10;
+}
+fruit();
+
+// question 7 :-
