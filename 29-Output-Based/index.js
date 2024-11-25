@@ -56,13 +56,43 @@
 
 // Question 6:- hoisting
 
-function fruit() {
-  console.log(name); //Undefined
-  console.log(number); // ReferenceError: Cannot access 'number' before initialization
+// function fruit() {
+//   console.log(name); //Undefined
+//   console.log(number); // ReferenceError: Cannot access 'number' before initialization
 
-  var name = "apple";
-  let number = 10;
-}
-fruit();
+//   var name = "apple";
+//   let number = 10;
+// }
+// fruit();
 
 // question 7 :-
+
+// for (var i = 0; i < 3; i++) {
+//   setTimeout(() => console.log(i), 1);
+// }
+// Output will be 3 3 3
+
+// question 8 :-
+
+// for (let i = 0; i < 3; i++) {
+//   setTimeout(() => console.log(i), 1);
+// }
+// Output will be 0 1 2
+
+// 9
+// console.warn(+true);
+// console.warn(typeof +true);
+
+//10
+// console.warn(!"Anil");
+// console.warn(typeof "Anil");
+
+//11
+let data = "size";
+const bird = {
+  size: "small",
+};
+console.log(bird[data]); //small
+console.log(bird.size); //small
+console.log(bird["size"]); //small
+console.log(bird.data); // undefined
