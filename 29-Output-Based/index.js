@@ -88,11 +88,63 @@
 // console.warn(typeof "Anil");
 
 //11
-let data = "size";
-const bird = {
-  size: "small",
-};
-console.log(bird[data]); //small
-console.log(bird.size); //small
-console.log(bird["size"]); //small
-console.log(bird.data); // undefined
+// let data = "size";
+// const bird = {
+//   size: "small",
+// };
+// console.log(bird[data]); //small
+// console.log(bird.size); //small
+// console.log(bird["size"]); //small
+// console.log(bird.data); // undefined
+
+//12
+
+// let c = { name: "Aman" };
+// let d;
+
+// d = c;
+// c.name = "musa";
+// console.log(d.name); // musa will be the answer
+
+//13
+
+// var x;
+// var x = 10;
+// console.log(x); // output will be 10
+
+// 14
+
+// var x;
+// let x = 10;
+// console.log(x); // SyntaxError: Identifier 'x' has already been declared
+
+// 15
+
+// let a = 3;
+// console.log(typeof a); // type is number
+// let b = new Number(3);
+// console.log(typeof b); // type is object
+
+// console.log(a == b); // true because data is same
+// console.log(a === b); // false because data is same but type is not same
+
+// 16
+
+// let name;
+// nmae = {};
+// console.log(name); // undefined
+
+// 17
+
+// function fruit() {
+//   console.log("woof!");
+// }
+// fruit.name = "apple";
+// fruit();
+
+// 18
+
+function sum(a, b) {
+  return a + b;
+}
+console.log(sum(2, "2"));
