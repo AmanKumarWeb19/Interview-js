@@ -144,7 +144,21 @@
 
 // 18
 
-function sum(a, b) {
-  return a + b;
+// function sum(a, b) {
+//   return a + b;
+// }
+// console.log(sum(2, "2"));
+
+//19
+
+// let num = 0;
+// console.log(num++); // 0
+// console.log(++num); // 2
+// console.log(num); // 2
+
+// 20
+
+function getAge(...arg) {
+  console.log(typeof arg);
 }
-console.log(sum(2, "2"));
+getAge(21);
